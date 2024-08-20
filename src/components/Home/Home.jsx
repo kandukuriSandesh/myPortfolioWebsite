@@ -5,7 +5,7 @@ const Home = () => {
   const [exclaimation, setExclaimation] = useState("");
 
   useEffect(() => {
-   const key = setInterval(controlExclaimation,1000)
+   const key = setInterval(controlExclaimation,700)
 
    return () => {
     clearInterval(key)
