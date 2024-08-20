@@ -1,0 +1,32 @@
+.header-block{
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-sub-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.header-toggle-h2{
+  color: var(--text-color);
+  margin: var(--header-item-margin) ;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sidebar-item{
+    color: var(--text-color);
+    background-color: var(--background-color);
+    
+}
+
+.sidebar-item:hover{
+  color: var(--background-color);
+  background-color: var(--text-color);
+}

@@ -1,0 +1,21 @@
+.logo-block{
+    display: flex;
+
+}
+
+.logo-S{
+    font-size: 50px;
+    color: var(--text-color) ;
+    font-family: "Bodoni Moda SC", serif;
+    margin-top: 10px;
+
+}
+
+.logo-K{
+    font-size: 50px;
+    color: var(--text-color) ;
+    font-family: "Bodoni Moda SC", serif;
+    margin-bottom: 10px;
+    position: relative;
+    right: 8px;
+}

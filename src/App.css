@@ -1,0 +1,19 @@
+:root {
+  --background-color: #282c34; /* Initial red/blue theme */
+  --text-color: #61dafb;
+  --header-item-margin:20px
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg{
+  background-color: var(--background-color);
+}
+
+.text-colour{
+  color: var(--text-color);
+}

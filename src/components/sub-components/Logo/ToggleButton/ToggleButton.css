@@ -1,0 +1,43 @@
+.toggle-container {
+    position: relative;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide the default checkbox */
+  .toggle-checkbox {
+    display: none;
+  }
+  
+  /* The slider track */
+  .toggle-label {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 34px;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.4s;
+  }
+  
+  /* The slider handle */
+  .toggle-label::before {
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    background-color: white;
+    top: 4px;
+    left: 4px;
+    transition: transform 0.4s;
+  }
+  
+  /* When the toggle is checked */
+  .toggle-checkbox:checked + .toggle-label {
+    background-color: #2196F3;
+  }
+  
+  .toggle-checkbox:checked + .toggle-label::before {
+    transform: translateX(26px);
+  }
