@@ -7,7 +7,6 @@
     font-size: 50px;
     color: var(--text-color) ;
     font-family: "Bodoni Moda SC", serif;
-    margin-top: 10px;
 
 }
 
@@ -18,4 +17,6 @@
     margin-bottom: 10px;
     position: relative;
     right: 8px;
+    margin-top: 10px;
+
 }

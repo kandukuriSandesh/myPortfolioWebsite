@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from '../sub-components/Logo/Logo'
 import './Header.css'
 import ToggleButton from '../sub-components/Logo/ToggleButton/ToggleButton';
@@ -6,6 +6,21 @@ import Menu from '../../assests/menu.svg'
 
 const Header = () => {
   const [menuOpen, setmenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (menuOpen) {
+        setmenuOpen(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup event listener on unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [menuOpen]);
 
   return (
     <div className='header-block'>
