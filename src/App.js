@@ -4,7 +4,8 @@ import {createBrowserRouter, Outlet, Route, RouterProvider, Routes} from 'react-
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import './index.css'
-//#61dafb   #282c34
+import Portfolio from './components/Portfolio/Portfolio';
+import { AboutMe } from './components/AboutMe/AboutMe';
 
 const router = createBrowserRouter([
   {
@@ -12,8 +13,11 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     children: [
       { path: "/", element: <Home /> },
+      { path: "/portfolio", element: <Portfolio /> },
+      { path: "/aboutme", element: <AboutMe /> },
+
     ],
-  },
+  }
 ]);
 
 function RootLayout() {
@@ -23,6 +27,7 @@ function RootLayout() {
       <div className="flex-grow flex justify-center items-center bg">
         <Outlet />
       </div>
+      
     </div>
   );
 }
