@@ -1,11 +1,16 @@
 import React from 'react';
 import './AboutMe.css'
+import { toast } from 'react-toastify';
 export const AboutMe = () => {
+
+  const handleResumeDownload = () => {
+     toast.success('Resume Downloaded')
+  }
   return (
     <div className='text-colour max-w-screen-1124 responsive-font ' >
       <div class='' >
 
-      <button className='bg-reverse text-colour-reverse p-4 border-r-50 rounded-full font-semibold block m-auto hover:scale-95 hover:shadow-[0_10px_20px_rgba(255,255,255,0.8),0_6px_6px_rgba(255,255,255,0.5)] transition-all duration-300 ' >
+      <button onClick={handleResumeDownload} className='bg-reverse border border-solid border-[var(--background-color)] text-colour-reverse p-4 border-r-50 rounded-full font-semibold block m-auto hover:scale-95 hover:shadow-[0_10px_20px_var(--text-color),0_6px_6px_var(--text-color)] transition-all duration-300 ' >
       <a href="../../assests/Sandesh Resume.pdf" download>Download Resume</a>
       </button>
 

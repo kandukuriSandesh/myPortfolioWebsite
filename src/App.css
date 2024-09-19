@@ -1,7 +1,13 @@
 :root {
   --background-color: #282c34; /* Initial red/blue theme */
   --text-color: #61dafb;
-  --header-item-margin:20px
+  --header-item-margin:20px;
+  --toastify-color-success: var(--text-color);
+  --toastify-toast-background: #61dafb;
+  --toastify-icon-color-success: var(--toastify-color-success);
+  --toastify-toast-background:#1b1c1f;
+  --toastify-text-color-success: #61dafb;
+  --toastify-color-progress-success: var(--toastify-color-success);
 }
 
 
