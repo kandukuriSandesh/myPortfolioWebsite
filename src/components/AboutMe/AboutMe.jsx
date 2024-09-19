@@ -10,8 +10,8 @@ export const AboutMe = () => {
     <div className='text-colour max-w-screen-1124 responsive-font ' >
       <div class='' >
 
-      <button onClick={handleResumeDownload} className='bg-reverse border border-solid border-[var(--background-color)] text-colour-reverse p-4 border-r-50 rounded-full font-semibold block m-auto hover:scale-95 hover:shadow-[0_10px_20px_var(--text-color),0_6px_6px_var(--text-color)] transition-all duration-300 ' >
-      <a href="../../../public/Sandesh Resume.pdf" download>Download Resume</a>
+      <button onClick={handleResumeDownload} className='bg-reverse border border-solid border-[var(--background-color)] text-colour-reverse  border-r-50 rounded-full font-semibold block m-auto hover:scale-95 hover:shadow-[0_10px_20px_var(--text-color),0_6px_6px_var(--text-color)] transition-all duration-300 ' >
+      <a className=' block p-4'  href="/SandeshResume.pdf" download>Download Resume</a>
       </button>
 
 
