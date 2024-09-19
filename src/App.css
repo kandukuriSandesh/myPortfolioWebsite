@@ -15,7 +15,15 @@
   background-color: var(--background-color);
 }
 
+.bg-reverse{
+  background-color: var(--text-color);
+}
+
 .text-colour{
   color: var(--text-color);
+}
+
+.text-colour-reverse{
+  color: var(--background-color);
 }
 

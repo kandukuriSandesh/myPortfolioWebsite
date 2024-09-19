@@ -15,3 +15,16 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@screen after50 {
+  .responsive-font {
+    font-size: 0.875rem; /* 14px, equivalent to text-sm */
+  }
+}
+
+@screen after500 {
+  .responsive-font {
+    font-size: 1rem; /* 12px, equivalent to text-xs */
+
+  }
+}
