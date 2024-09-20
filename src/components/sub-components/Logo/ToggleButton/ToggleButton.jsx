@@ -1,21 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import './ToggleButton.css';
 
-function ToggleButton() {
-    const [isChecked, setIsChecked] = useState(false);
+function ToggleButton({isToggled,setIsToggled}) {
 
     useEffect(() => {
-      if (isChecked) {
+      if (isToggled) {
           document.documentElement.style.setProperty('--background-color', '#ffffff'); // New theme background
           document.documentElement.style.setProperty('--text-color', '#000000'); // New theme text color
       } else {
           document.documentElement.style.setProperty('--background-color', '#282c34'); // Initial theme background
           document.documentElement.style.setProperty('--text-color', '#61dafb'); // Initial theme text color
       }
-  }, [isChecked]);
+  }, [isToggled]);
 
   const handleToggle = () => {
-    setIsChecked(!isChecked);
+    setIsToggled(!isToggled);
   };
 
   return (
@@ -24,7 +23,7 @@ function ToggleButton() {
         type="checkbox" 
         id="toggle" 
         className="toggle-checkbox" 
-        checked={isChecked} 
+        checked={isToggled} 
         onChange={handleToggle} 
       />
       <label htmlFor="toggle" className="toggle-label"></label>

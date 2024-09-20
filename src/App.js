@@ -8,6 +8,8 @@ import './index.css'
 import Portfolio from './components/Portfolio/Portfolio';
 import { ToastContainer, toast } from 'react-toastify';
 import { AboutMe } from './components/AboutMe/AboutMe';
+import { ToggleProvider } from './context/ToggleContext/ToggleContext';
+
 
 const router = createBrowserRouter([
   {
@@ -24,6 +26,8 @@ const router = createBrowserRouter([
 
 function RootLayout() {
   return (
+    <ToggleProvider>
+
     <div className="flex flex-col min-h-screen">
       <Header />
       <ToastContainer
@@ -44,6 +48,7 @@ function RootLayout() {
       </div>
       
     </div>
+        </ToggleProvider>
   );
 }
 

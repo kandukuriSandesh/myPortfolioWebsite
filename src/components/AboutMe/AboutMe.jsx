@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './AboutMe.css'
 import { toast } from 'react-toastify';
+import { ToggleContext } from '../../context/ToggleContext/ToggleContext';
 export const AboutMe = () => {
+
+  const {isToggled} = useContext(ToggleContext);
 
   const handleResumeDownload = () => {
      toast.success('Resume Downloaded')
@@ -10,7 +13,7 @@ export const AboutMe = () => {
     <div className='text-colour max-w-screen-1124 responsive-font ' >
       <div class='' >
 
-      <button onClick={handleResumeDownload} className='bg-reverse border border-solid border-[var(--background-color)] text-colour-reverse  border-r-50 rounded-full font-semibold block m-auto hover:scale-95 hover:shadow-[0_10px_20px_var(--text-color),0_6px_6px_var(--text-color)] transition-all duration-300 ' >
+      <button onClick={handleResumeDownload} className='mb-2 bg-reverse border border-solid border-[var(--background-color)] text-colour-reverse  border-r-50 rounded-full font-semibold block m-auto hover:scale-95 hover:shadow-[0_10px_20px_var(--text-color),0_6px_6px_var(--text-color)] transition-all duration-300 ' >
       <a className=' block p-4'  href="/SandeshResume.pdf" download>Download Resume</a>
       </button>
 
@@ -36,7 +39,7 @@ experience. Dedicated to problem-solving and continuous learning, seeking to dri
         </div>
         <div className='mt-1' > 
           <h1 className='font-bold' >EDUCATION</h1>
-          <hr />
+          <hr className={isToggled?'border-0 h-0.5 bg-gray-500':''} />
           <div className='flex justify-between' >
             <div>
                <h2 className=' font-bold' >Masters of Computer Science</h2>
@@ -53,7 +56,8 @@ experience. Dedicated to problem-solving and continuous learning, seeking to dri
         </div>
         <div className='mt-1' >
           <h1 className='font-bold' >SKILLS</h1>
-          <hr />
+          <hr className={isToggled?'border-0 h-0.5 bg-gray-500':''} />
+
           <div className='flex justify-between gap-5 500:flex-col ' >
             <div>
                <p className='mt-1' > <span className='font-bold' >Programming Language:</span> JavaScript, TypeScript, Node JS </p>
@@ -68,7 +72,8 @@ experience. Dedicated to problem-solving and continuous learning, seeking to dri
         </div>
         <div className="mt-1">
            <h1 className="font-bold"> WORK EXPERIENCE</h1>
-           <hr />
+           <hr className={isToggled?'border-0 h-0.5 bg-gray-500':''} />
+
            
            <div class=" ">
             <h2 class="font-bold">Software Development Engineer | 3NS.ai | London</h2>
@@ -148,8 +153,9 @@ experience. Dedicated to problem-solving and continuous learning, seeking to dri
           </ul>
       </div>
       <div className='mt-4' >
-        <hr />
-        <h1 className='font-bold mt-2' >PERSONAL PROJECTS</h1>
+        <hr className={isToggled?'border-0 h-0.5 bg-gray-500':''} />
+
+        <h1 className='font-bold mt-2 ' >PERSONAL PROJECTS</h1>
         <div className='flex gap-4 500:flex-col' >
           <div>
             <h1 className='font-semibold  mt-2' >NewsPoint | React | HTML | CSS | Javascript </h1>
@@ -195,8 +201,9 @@ experience. Dedicated to problem-solving and continuous learning, seeking to dri
         </div>
       </div>
       <div className='mt-4' >
-        <hr />
-        <h1 className='font-bold mt-2' >VOLUNTEERING</h1>
+        <hr className={isToggled?'border-0 h-0.5 bg-gray-500':''} />
+
+        <h1 className='font-bold mt-2 mb-2' >VOLUNTEERING</h1>
         <ul class="list-disc pl-5 space-y-2" >
           <li>
             <span class="font-semibold">QuikieApps, Bangalore, India:</span> Assisted the fresher junior developers who joined the company in learning and understanding the React documentation and explained to them about asynchronous behavior of Javascript in detail.
@@ -209,8 +216,9 @@ experience. Dedicated to problem-solving and continuous learning, seeking to dri
           </li>
         </ul>
       </div>
-      <div className='mt-4' >
-        <hr />
+      <div className='mt-4 mb-2' >
+        <hr className={isToggled?'border-0 h-0.5 bg-gray-500':''} />
+
         <h1 className='font-bold mt-2' >ACHIEVEMENTS AND AWARDS</h1>
         <ul class="list-disc pl-5 space-y-2" >
           <li>

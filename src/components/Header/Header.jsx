@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Logo from '../sub-components/Logo/Logo'
 import './Header.css'
 import ToggleButton from '../sub-components/Logo/ToggleButton/ToggleButton';
 import Menu from '../../assests/menu.svg'
 import { Link } from 'react-router-dom';
+import { ToggleContext } from '../../context/ToggleContext/ToggleContext';
 
 const Header = () => {
   const [menuOpen, setmenuOpen] = useState(false);
+  const {isToggled,setIsToggled} = useContext(ToggleContext);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +35,7 @@ const Header = () => {
         <div className='center mr-10' >
 
          <h2 className='header-toggle-h2 m-5 hidden after400:block' >Toggle Theme</h2>
-         <ToggleButton  />
+         <ToggleButton isToggled={isToggled} setIsToggled = {setIsToggled} />
         </div>
       <div className='relative   mr-10' >
         <img style={{height:"50px"}} onClick={() => setmenuOpen(!menuOpen)} src={Menu} alt='Menu' />
