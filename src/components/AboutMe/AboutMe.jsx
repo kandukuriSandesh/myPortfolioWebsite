@@ -22,7 +22,7 @@ export const AboutMe = () => {
       
       <h1 className='text-2xl below380:text-xl'>Sandesh Kandukuri</h1>
       <div >
-        <div className='flex flex-col items-center justify-center above770:flex-row'>
+        <div className='flex flex-col items-center justify-center lg:flex-row'>
 
         <span className='below380:text-sm'>
           kandukurisandesh1998@gmail.com <span className='invisible above770:visible font-extrabold '>/</span>
@@ -135,7 +135,7 @@ experience. Dedicated to problem-solving and continuous learning, seeking to dri
       </div>
       </div>
 
-      <div className='container flex flex-col justify-center items-center border-page p-2 after500:p-12 m-0.5 after500:m-3500:p-2 m-3' >
+      <div className='container flex flex-col justify-center items-center border-page  p-2 after500:p-12 m-0.5 after500:m-3 mt-5' >
       <div>
 
       <div class=" mt-4 ">

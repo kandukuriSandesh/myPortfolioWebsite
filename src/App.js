@@ -9,6 +9,7 @@ import Portfolio from './components/Portfolio/Portfolio';
 import { ToastContainer, toast } from 'react-toastify';
 import { AboutMe } from './components/AboutMe/AboutMe';
 import { ToggleProvider } from './context/ToggleContext/ToggleContext';
+import ContactMe from './components/ContactMe/ContactMe';
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,8 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/portfolio", element: <Portfolio /> },
       { path: "/aboutme", element: <AboutMe /> },
+      { path: "/contactme", element: <ContactMe /> },
+
 
     ],
   }

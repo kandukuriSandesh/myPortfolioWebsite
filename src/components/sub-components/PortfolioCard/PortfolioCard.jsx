@@ -1,21 +1,29 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 
 import guardianImage from '../../../assests/Images/guardianImage.png'
 import BarChart from '../BarChart/BarChart'
+import { ToggleContext } from '../../../context/ToggleContext/ToggleContext'
 
-const PortfolioCard = ({img,description,data,link}) => {
+const PortfolioCard = ({img,description,data,link,title}) => {
+  const {isToggled,setIsToggled} = useContext(ToggleContext);
 
   const [hide,setHide] = useState(true)
   
   return (
-    <div className='flex p-5 flex-col lg:flex-row container gap-5 transition-transform transform hover:scale-105 border border-[#61dafb] shadow-[0_4px_15px_rgba(97,218,251,0.9)] rounded-lg overflow-hidden' >
+    <div 
+    style={isToggled? { boxShadow: '0 4px 15px rgba(0, 0, 0, 1)' }:{}}
+    className={`flex p-5 flex-col mt-0 lg:flex-row container gap-5 transition-transform transform hover:scale-105
+    ${isToggled?
+    `border-[#000000] shadow-[0_4px_15px_rgba(0, 0, 0, 1)]`  :
+    " border-[#61dafb] shadow-[0_4px_15px_rgba(97,218,251,0.7)]"
+    } rounded-lg overflow-hidden`} >
         <div className='max-w-[300px]' >
            <img className=' min-h-[200px] min-w-[300px] max-w-[100%] object-cover h-auto' src={img} alt="" /> 
         </div>
         <div className='flex items-start justify-between text-colour border-l-2 border-r-2 border-gray-300 px-4 py-2'>
         <div className='flex-grow'>
           <h1 className='font-bold text-lg'>
-            Healthcare-Oriented Event Management System 
+            {title} 
             <button className='text-base bg-reverse text-colour-reverse rounded-full ml-2'>
               <a className='p-2' href={link}>Live Link</a>
             </button>
