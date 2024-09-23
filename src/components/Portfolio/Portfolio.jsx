@@ -5,6 +5,7 @@ import guardianImage from '../../assests/Images/guardianImage.png'
 import smallcap from '../../assests/Images/smallcap.png'
 import rockpaperscissors from '../../assests/Images/rockpaperscissors.png'
 import heatpumpdesign from '../../assests/Images/heatpumpdesign.png'
+import newspoint from '../../assests/Images/newspoint.png'
 
 const Portfolio = () => {
 
@@ -40,7 +41,9 @@ const Portfolio = () => {
   img:guardianImage
 };
 
-const portfolio5 = {
+
+
+const portfolio3 = {
   data:[
     { name: 'Material UI', value: 20 },
   { name: 'React', value: 40 },
@@ -52,6 +55,21 @@ description:`This project provides a comprehensive Heat Pump Designer service, c
 link:'https://heatpumpdesigner.com/',
 img:heatpumpdesign
 };
+
+const portfolio5 = {data:[
+    { name: 'HTML', value: 100 },
+    { name: 'BoorStrap', value: 100 },
+    { name: 'React', value: 100 },
+  ],
+  title:'One Point News',
+  description:`This project brings together news from different sources and categories all in one place. You can browse news across categories.
+
+Plus, there’s a handy search feature that lets you look for specific news articles within each category. Whether you're interested in tech updates, health news, or business trends, you can find everything easily here.
+
+Stay updated with the latest news, all in one convenient spot!`,
+  link:'https://news-point-nine.vercel.app/',
+  img:newspoint
+  };
 
 const portfolio6 = {data:[
   { name: 'HTML', value: 100 },
@@ -68,12 +86,15 @@ img:rockpaperscissors
     <div>
       <PortfolioCard data={portfolio1.data} title={portfolio1.title} link={portfolio1.link} description={portfolio1.description} img={portfolio1.img} />
 
-      <PortfolioCard data={portfolio2.data} title={portfolio2.title} description={portfolio2.description} img={portfolio2.img} />
+      <PortfolioCard data={portfolio2.data} title={portfolio2.title} link={portfolio2.link} description={portfolio2.description} img={portfolio2.img} />
 
-      <PortfolioCard data={portfolio5.data} title={portfolio5.title} description={portfolio5.description} img={portfolio5.img} />
+      <PortfolioCard data={portfolio3.data} title={portfolio3.title} link={portfolio3.link} description={portfolio3.description} img={portfolio3.img} />
+
+      <PortfolioCard data={portfolio5.data} title={portfolio5.title} link={portfolio5.link} description={portfolio5.description} img={portfolio5.img} />
 
 
-      <PortfolioCard data={portfolio6.data} title={portfolio6.title} description={portfolio6.description} img ={portfolio6.img} />
+
+      <PortfolioCard data={portfolio6.data} title={portfolio6.title} link={portfolio6.link} description={portfolio6.description} img ={portfolio6.img} />
     </div>
   )
 }

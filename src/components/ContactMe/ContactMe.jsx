@@ -40,13 +40,13 @@ const ContactMe = () => {
     <div className='container  '>
       <div className='flex gap-32  justify-center items-center ' >
         <div className=' scale-125  '  >
-          <a href="" className='flex  gap-1 justify-center items-center' target="_blank" >
+          <a href="https://github.com/kandukuriSandesh" className='flex  gap-1 justify-center items-center' target="_blank" >
           <FaGithub />
           GitHub
           </a>
         </div>
         <div className=' scale-125  '  >
-          <a href="" className='flex  gap-1 justify-center items-center' target="_blank" >
+          <a href="www.linkedin.com/in/sandesh-kandukuri" className='flex  gap-1 justify-center items-center' target="_blank" >
           <FaLinkedin />
           Linkedin
           </a>

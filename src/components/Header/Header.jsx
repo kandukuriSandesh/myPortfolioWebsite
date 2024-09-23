@@ -27,7 +27,10 @@ const Header = () => {
   return (
     <div className='header-block'>
       <div className='ml-10 mt- ' >
+      <Link to={'/'} >
+      
       <Logo/>    
+      </Link>
 
       </div>
 

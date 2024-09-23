@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./Home.css"
+import { Link } from 'react-router-dom';
 const Home = () => {
 
   const [exclaimation, setExclaimation] = useState("");
@@ -41,16 +42,20 @@ const Home = () => {
            </h1>
            <h1 className='text-colour' > Full Stack Developer arrayed into range of technologies </h1>
            <div className='mt-4 flex justify-center  ' >
+            <Link to={'/portfolio'} >
             <button className='p-3 home-btn flex justify-center items-center ' > <span className='home-btn-text' >See My Projects </span>
               <span class="material-symbols-outlined ml-2 home-arrow">
               arrow_forward
               </span>
             </button>
+            </Link>
+            <Link to={'./contactme'} >
             <button className='p-3 home-btn flex justify-center items-center ml-5 ' ><span className='home-btn-text' >Contact Me </span>
               <span class="material-symbols-outlined ml-2 home-arrow">
               arrow_forward
               </span>
             </button>
+            </Link>
            </div>
        </div>
 
