@@ -14,8 +14,8 @@ const ContactMe = () => {
 
     emailjs
       .sendForm(
-        'service_0dvys3s',  // Replace with your EmailJS service ID
-        'template_81e1nzq',  // Replace with your EmailJS template ID
+        'service_0dvys3s',  
+        'template_81e1nzq',  
         form.current,
         {
           publicKey: 'DJuYAQsoC0dlhuZO3',
@@ -38,7 +38,7 @@ const ContactMe = () => {
 
   return (
     <div className='container  '>
-      <div className='flex gap-32  justify-center items-center ' >
+      <div className='flex gap-5 sm:gap-32 flex-col sm:flex-row  justify-center items-center ' >
         <div className=' scale-125  '  >
           <a href="https://github.com/kandukuriSandesh" className='flex  gap-1 justify-center items-center' target="_blank" >
           <FaGithub />
@@ -59,11 +59,11 @@ const ContactMe = () => {
         </div>
       </div>
       <div
-        className="p-20 mt-10 min-h-[200px] min-w-[300px] max-w-[100%] bg-cover bg-center opacity-70"
+        className="p-4 sm:p-20 mt-10 min-h-[200px] min-w-[300px] max-w-[100%] bg-cover bg-center opacity-70"
         style={{ backgroundImage: `url(${contactbg})` }}
       >
         <form ref={form} onSubmit={sendEmail}>
-          <div className='flex gap-5'>
+          <div className='flex flex-col sm:flex-row  gap-5'>
             <input
               type="text"
               name="user_name"
@@ -79,7 +79,7 @@ const ContactMe = () => {
               required
             />
           </div>
-          <div className='mt-2'>
+          <div className='mt-5'>
             <textarea
               name="message"
               className="w-full bg-[#0B1D33] border border-[rgba(255,255,255,0.07)] rounded-lg text-white text-base font-normal py-[18px] px-[20px] focus:outline-none focus:ring-2"

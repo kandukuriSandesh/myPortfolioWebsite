@@ -18,7 +18,7 @@ const PortfolioCard = ({img,description,data,link,title}) => {
     " border-[#61dafb] shadow-[0_4px_15px_rgba(97,218,251,0.7)]"
     } rounded-lg overflow-hidden`} >
         <div className='max-w-[300px]' >
-           <img className=' min-h-[200px] min-w-[300px] max-w-[100%] object-cover h-auto' src={img} alt="" /> 
+           <img className=' min-h-[200px] min-w-[250px] above400:min-w-[300px] max-w-[100%] object-cover h-auto' src={img} alt="" /> 
         </div>
         <div className='flex items-start justify-between text-colour border-l-2 border-r-2 border-gray-300 px-4 py-2'>
         <div className='flex-grow'>
@@ -34,7 +34,7 @@ const PortfolioCard = ({img,description,data,link,title}) => {
         </div>
       </div>
       
-       <div className={`min-w-[300px] min-h-[240px] ${hide ? "flex justify-center items-center" : ''}`}>
+       <div className={`min-w-[250px] lg:min-w-[300px] min-h-[240px] ${hide ? "flex justify-center items-center" : ''}`}>
          <div>
 
           <button className={`font-semibold text-colour transition-opacity duration-1000 ease-in-out ${hide ? '':'hidden' }  `} onClick={() => setHide(false)}>

@@ -135,7 +135,7 @@ experience. Dedicated to problem-solving and continuous learning, seeking to dri
       </div>
       </div>
 
-      <div className='container flex flex-col justify-center items-center border-page  p-2 after500:p-12 m-0.5 after500:m-3 mt-5' >
+      <div className='container mb-10 after500:mb-10 flex flex-col justify-center items-center border-page  p-2 after500:p-12 m-0.5 after500:m-3 mt-5 ' >
       <div>
 
       <div class=" mt-4 ">

@@ -1,12 +1,29 @@
 
-import React, { useRef, useEffect, useContext } from 'react';
+import React, { useRef, useEffect, useContext, useState } from 'react';
 import * as d3 from 'd3';
 import { ToggleContext } from '../../../context/ToggleContext/ToggleContext';
 
 const BarChart = ({ data, width = 300, height = 200 }) => {
+  const [barChartWidth,setbarChartWidth] = useState(width);
   const { isToggled } = useContext(ToggleContext);
   const svgRef = useRef();
+/* 
+  useEffect(() => {
+    const handleResize = () => {
+      if(window.innerWidth < 400){
+        setbarChartWidth(250)
+      }else{
+        setbarChartWidth(300)
+      }
+    }
+    handleResize()
 
+    window.addEventListener('resize',handleResize)
+
+    return () => {
+      window.removeEventListener('resize',handleResize)
+    }
+  },[]) */
   useEffect(() => {
     const textColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
 
