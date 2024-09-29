@@ -38,7 +38,7 @@ const Home = () => {
     <div className='flex justify-center items-center text-center ' >
        <div className='container  ' >
            <h1 className='home-title outlined-text' >
-            Hi, I am <span className='fancy-letter relative top-1 ' >S</span>andesh <span><span className='fancy-letter relative top-2' >K</span>andukuri<span className='exclaimation' >{exclaimation}</span></span>
+            Hi, I am <span className=' inline-block ' ><span className='fancy-letter relative top-1 ' >S</span>andesh</span> <span className=' inline-block ' ><span><span className='fancy-letter relative top-2' >K</span>andukuri</span><span className='exclaimation' >{exclaimation}</span></span>
            </h1>
            <h1 className='text-colour' > Full Stack Developer arrayed into range of technologies </h1>
            <div className='mt-4 flex justify-center  ' >
