@@ -13,8 +13,8 @@ const Portfolio = () => {
     data:[
       {name:'Bootstrap',value:'20'},
       {name:'React',value:'30'},
-      {name:'Node',value:'30'},
-      {name:'MongoDB',value:'20'}
+      {name:'Flask',value:'30'},
+      {name:'SQL',value:'20'}
     ],
     title:'Crypto Analysis and Trading Platform',
     link:'https://www.smallcap.ai/',

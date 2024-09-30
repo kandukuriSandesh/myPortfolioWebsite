@@ -46,7 +46,7 @@ const ContactMe = () => {
           </a>
         </div>
         <div className=' scale-125  '  >
-          <a href="www.linkedin.com/in/sandesh-kandukuri" className='flex  gap-1 justify-center items-center' target="_blank" >
+          <a href="https://linkedin.com/in/sandesh-kandukuri" className='flex  gap-1 justify-center items-center' target="_blank" >
           <FaLinkedin />
           Linkedin
           </a>

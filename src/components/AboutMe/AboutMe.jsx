@@ -60,9 +60,9 @@ experience. Dedicated to problem-solving and continuous learning, seeking to dri
 
           <div className='flex justify-between gap-5 500:flex-col ' >
             <div>
-               <p className='mt-1' > <span className='font-bold' >Programming Language:</span> JavaScript, TypeScript, Node JS </p>
-               <p className='mt-1' > <span className='font-bold' >Web Dev:</span> HTML,CSS, Bootstrap,Tailwind CSS, Material UI, React Js. </p>
-               <p className='mt-1' > <span className='font-bold' > Area of Interest: </span> Problem SOlving, DSA, Analytical thinking   </p>
+               <p className='mt-1' > <span className='font-bold' >Programming Language:</span> JavaScript, TypeScript, Node JS, SQL, Java </p>
+               <p className='mt-1' > <span className='font-bold' >Web Dev:</span> HTML,CSS, Bootstrap,Tailwind CSS, Material UI, React Js Next JS. </p>
+               <p className='mt-1' > <span className='font-bold' > Area of Interest: </span> Problem Solving, DSA, Analytical thinking   </p>
             </div>
             <div>
                <p className='mt-1' > <span className='font-bold' >Others:</span> MongoDB,  Firebase, Rest API, GraphQL, NextJS, React Query, Redux ToolKit  </p>
